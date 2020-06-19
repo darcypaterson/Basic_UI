@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet"> 
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+
+    <!-- My styles -->
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    
+
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9bb6abc112.js" crossorigin="anonymous"></script>
+
+    <title>Basic UI</title>
+
+
+  </head>
+  <body>
+
+    <header>
+        <!-- Upper Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-0 mainNav">
+
+            <a class="navbar-brand py-0" href="#">
+                <img class="brandLogo ml-2" src="images/logo-mobile.svg">
+            </a>
+
+
+            <div id="navbarNavDropdown" class="ml-auto">
+
+                <div class="navbar-nav ml-auto d-flex flex-row justify-content-end">
+
+                    <!-- Desktop Navigation Items -->
+                    <div class="collapse navbar-collapse">
+
+                        <!-- Item 1: Phone Number -->
+                        <div class="nav-item p-4 my-0">
+
+                            <a href="#" class="nav-link">1-855-231-8424</a>
+
+                        </div> 
+
+                        <!-- Item 2: Help with Dropdown Menu -->
+                        <div class="nav-item py-4 px-5 my-0 border-left dropdown">
+                            
+                            <a class="nav-link pl-0 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Help
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Email Us</a>
+                                <a class="dropdown-item" href="#">Chat Online</a>
+                                <a class="dropdown-item" href="#">Help Center</a>
+                                <span class="dropdown-item">1-855-231-8424<br><small>Mon-Fri 8am-7pm ET</small></span>
+                            </div>
+
+                        </div> 
+
+                        <!-- Item 3: Create Free Account -->
+                        <div class="nav-item p-4 my-0 border-left">
+
+                            <a href="#" class="nav-link">Create Free Account</a>
+                            
+                        </div>
+
+                        <!-- Item 4: Sign In -->
+                        <div class="nav-item p-4 my-0 border-left">
+
+                            <a href="#" class="nav-link">Sign In</a>
+                            
+                        </div>                                           
+                    </div>
+
+
+                    <!-- Mobile Navigation Items -->
+                    <!-- Item 1: Help -->
+                    <div class="nav-item px-3 py-2 my-0 d-inline-flex d-lg-none border-left">
+                        
+                        <a class="nav-link" href="#">
+                            Help
+                        </a>
+                        
+                    </div>
+
+                    <!-- Item 2: Search Icon -->
+                    <div class="nav-item px-3 py-2 my-0 d-inline-block d-lg-none border-left">
+
+                        <a class="nav-link" data-toggle="modal" href="#searchMobile" role="button" aria-expanded="false" aria-controls="searchMobile">
+                            <img id="magGlass" src="images/search.svg">
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Hamburger -->
+            <div class="nav-item px-2 py-2 px-lg-5 py-lg-4 my-0 d-inline-block d-lg-none border-left">
+
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target=".myNavDropdown" aria-controls="myNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> 
+
+            </div>
+
+        </nav>
+
+
+
+
+
+        <!-- Lower Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark py-0 py-lg-2 LDTopMenu">
+
+            <div class="collapse navbar-collapse myNavDropdown" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item d-flex d-lg-none justify-content-between">
+                        <a class="nav-link" href="#">Create Free Account</a>
+                        <a class="nav-link" href="#">Sign In</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Estate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Real Estate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Financial</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Family</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">All</a>
+                    </li>
+
+                </ul>
+                <form class="form-inline d-none d-lg-flex">
+                    <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light my-0" type="submit">Go</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-12 subHead">
+
+                <p class="resi">FREE RESIDENTIAL RENTAL / LEASE AGREEMENT</p>
+
+
+             
+                <div class="modal fade" id="searchMobile" tabindex="-1" role="dialog" aria-labelledby="searchMobileLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header border-0">
+                                <h5 class="modal-title" id="exampleModalLabel">What are you looking for?</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true"><img src="images/close.svg" alt="close" width="22"></span>
+                                </button>
+                            </div>
+                            <div class="w-100 bg-main-blue py-5">
+                                <form class="form-group d-flex flex-row justify-content-center w-75 mx-auto">
+                                    <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-light" type="submit">Go</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer border-0">
+                                <button type="button" class="btn btn-main" data-dismiss="modal">Close</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12">
+                <p class="question">What type of property is being rented?</p>
+            </div>
+            <div class="col-6 col-md-5 offset-md-1 col-lg-3 offset-lg-3">
+                <div class=" iconContain">
+                <span class="iconSpan">
+
+                    <img class="iconImg" src="images/content/house.png">
+                
+                    <label class="iconLabel">
+                        House
+                    </label>
+                </span>
+                </div>    
+            </div>
+            <div class="col-6 col-md-5 col-lg-3">
+                <div class=" iconContain">
+                <span class="iconSpan">
+
+                    <img class="iconImg" src="images/content/apartment.png">
+                
+                    <label class="iconLabel">
+                        Apartment
+                    </label>
+                </span>
+                </div>    
+            </div>
+            <div class="col-6 col-md-5 offset-md-1 col-lg-3 offset-lg-3">
+                <div class=" iconContain">
+                <span class="iconSpan">
+
+                    <img class="iconImg" src="images/content/basement.png">
+                
+                    <label class="iconLabel">
+                        Basement
+                    </label>
+                </span>
+                </div>    
+            </div>
+            <div class="col-6 col-md-5 col-lg-3">
+                <div class=" iconContain">
+                <span class="iconSpan">
+
+                    <img class="iconImg" src="images/content/condo.png">
+                
+                    <label class="iconLabel">
+                        Condo
+                    </label>
+                </span>
+                </div>    
+            </div>
+            <div class="col-6 col-md-5 offset-md-1 col-lg-3 offset-lg-3">
+                <div class=" iconContain">
+                <span class="iconSpan">
+
+                    <img class="iconImg" src="images/content/duplex.png">
+                
+                    <label class="iconLabel">
+                        Duplex
+                    </label>
+                </span>
+                </div>    
+            </div>
+            <div class="col-6 col-md-5 col-lg-3">
+                <div class=" iconContain">
+                <span class="iconSpan">
+
+                    <img class="iconImg" src="images/content/mobile.png">
+                
+                    <label class="iconLabel">
+                        Mobile
+                    </label>
+                </span>
+                </div>    
+            </div>
+            <div class="col-6 col-md-5 offset-md-1 col-lg-3 offset-lg-3">
+                <div class=" iconContain">
+                <span class="iconSpan">
+
+                    <img class="iconImg" src="images/content/room.png">
+                
+                    <label class="iconLabel">
+                        Room
+                    </label>
+                </span>
+                </div>    
+            </div>
+            <div class="col-6 col-md-5 col-lg-3">
+                <div class=" iconContain">
+                <span class="iconSpan">
+
+                    <img class="iconImg" src="images/content/townHouse.png">
+                
+                    <label class="iconLabel">
+                        Town House
+                    </label>
+                </span>
+                </div>    
+            </div>
+            <div class="col-6 col-md-5 offset-md-1 col-lg-3 offset-lg-3">
+                <div class=" iconContain">
+                <span class="iconSpan">
+
+                    <img class="iconImg" src="images/content/other.png">
+                
+                    <label class="iconLabel">
+                        Other
+                    </label>
+                </span>
+                </div>    
+            </div>
+
+            
+        </div>
+
+     
+    </div>
+
+    <footer>
+
+        <div id="footer-desktop" class="container py-5">
+
+            <div class="row">
+
+                <div class="col-12 col-lg-3">
+
+                    <div>
+                        <img src="images/ld-footer-logo.svg" alt="footer logo" class="footer-logo mb-3">
+                    </div>
+
+                    <div class="mb-5">
+                        1-855-231-8424<br>
+                        <span class="footerv2_phone_hours">Mon-Fri 8am - 7pm ET</span>
+                    </div>
+                    
+                    <div>
+                        <img src="images/facebook-footer.svg" alt="social media" class="footer-social-icons d-inline-block mr-2">
+                        <img src="images/twitter-footer.svg" alt="social media" class="footer-social-icons d-inline-block mr-2">
+                        <img src="images/linkedin-footer.svg" alt="social media" class="footer-social-icons d-inline-block mr-2">
+                    </div>
+                    
+                </div>
+
+                <div class="col-12 col-lg-3">
+
+                    <nav class="nav flex-column footerNav">
+                        <a href="#" class="nav-link">Home</a>
+                        <a href="#" class="nav-link">About</a>
+                        <a href="#" class="nav-link">Contact</a>
+                        <a href="#" class="nav-link">Help Center</a>
+                    </nav>
+                    
+                </div>
+
+                <div class="col-12 col-lg-3">
+                    <nav class="nav flex-column footerNav">
+                        <a href="#" class="nav-link">Legal Documents</a>
+                        <a href="#" class="nav-link">Law Library</a>
+                        <a href="#" class="nav-link">Blog</a>
+                        <a href="#" class="nav-link">Affiliate Program</a>
+                        <a href="#" class="nav-link">White Label Program</a>
+                    </nav>
+                </div>
+
+                <div class="col-12 col-lg-3">
+
+                    <form>
+                        <div class="form-group">
+                            <select class="custom-select" id="dropdown-country">
+                                <option><img src="images/united-states.png" class="flag-image"> United States</option>
+                                <option><img src="images/canada.png" class="flag-image"> Canada</option>
+                                <option><img src="images/united-kingdom.png" class="flag-image"> United Kingdom</option>
+                                <option><img src="images/australia.png" class="flag-image"> Australia</option>
+                            </select>
+                        </div>                    
+                    </form>
+
+                    <div class="footerv2_logos">
+                        <div class="p-2 footerv2_logo_symantec">
+                            
+                            <img class="img-fluid" name="seal" src="https://seal.websecurity.norton.com/getseal?at=0&amp;sealid=0&amp;dn=www.lawdepot.ca&amp;lang=en&amp;tpt=transparent" usemap="#sealmap_large" alt="" border="0"> 
+
+                        </div>
+                        <div class="p-2 footerv2_logo_trustwave">
+                            
+                            <img class="img-fluid"  id="trustwaveSealImage" src="https://sealserver.trustwave.com/seal_image.php?customerId=x4ix8frNfNOhLcVHKItmgytngYYVM8&amp;size=105x54&amp;style=" style="cursor:pointer;" alt="This site is protected by Trustwave's Trusted Commerce program" title="This site is protected by Trustwave's Trusted Commerce program" border="0">
+                        </div>
+
+                        <div class="p-2 footerv2_logo_bbb">
+
+                            <img class="logo_bb img-fluid" src="https://seal-edmonton.bbb.org/seals/blue-seal-293-61-lawdepottm-134065.png" alt="Click for the Business Review of LawDepot TM, a Legal Forms in Edmonton AB">
+
+                        </div>
+                    </div>
+                </div>
+                
+            </div><!-- End Row -->
+
+        </div>
+
+        <div class="bg-backgroundgrey">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 footerv2_disclaimer">
+
+                        <p class="py-5 mb-0">Your use of this site is subject to our  <a href="https://www.lawdepot.com/terms.php">Terms of Use</a>, <a href="https://www.lawdepot.com/disclaimer.php">Disclaimer</a>, <a href="https://www.lawdepot.com/privacy.php">Privacy Policy</a>.
+                    LawDepot® is not a law firm and cannot provide legal advice. We provide information and software and you are responsible for appropriately using this material. 
+                    ©2002-2020 LawDepot® (Sequiter Inc.). All Rights Reserved.</p>                    
+                    </div>
+                    
+                </div>
+
+                
+            </div>
+                            
+        </div>
+    
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+    <script src="js/scripts.js"></script>
+
+
+  </body>
+</html>
