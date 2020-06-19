@@ -1,0 +1,28 @@
+/* Change dropdowns from click to hover */
+
+.dropdown-menu {
+	    
+    border: 2px solid $bordergrey;
+    margin-top: -10px;
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    
+}
+.dropdown:hover>.dropdown-menu {
+
+    display: block;
+    top: calc(100% - 2px);
+
+}
+
+.dropdown-item {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.dropdown-item:hover {
+	color: white;
+	background-color: $helpLabel !important;
+}
+

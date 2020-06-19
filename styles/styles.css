@@ -1,5 +1,3 @@
-@import "bootstrap-mods.css";
-@import "ld.css";
 /* Sass Variables and Mixins */
 /*VARIABLES*/
 /* Colours */
@@ -9,6 +7,31 @@
 /* Found on the curent style guide and questionnaire buttons */
 /* border on Search Bar large */
 /*MIXINS*/
+/* Change dropdowns from click to hover */
+@import "ld.css";
+.dropdown-menu {
+  border: 2px solid #D0D0D0;
+  margin-top: -10px;
+  padding-top: 0;
+  padding-bottom: 0;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+  top: calc(100% - 2px);
+}
+
+.dropdown-item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.dropdown-item:hover {
+  color: white;
+  background-color: #88abac !important;
+}
+
 /* ///// Fonts ///// */
 .slateBlue {
   color: #454857;
@@ -363,6 +386,7 @@ nav.LDTopMenu > div > ul.navbar-nav > li > a.nav-link:hover {
   text-decoration-line: underline;
 }
 
+/*  /////////  FOOTER  /////////  */
 .footerNav a {
   color: #58595b;
 }
@@ -370,6 +394,7 @@ nav.LDTopMenu > div > ul.navbar-nav > li > a.nav-link:hover {
 .footerNav a:hover {
   color: #58595b;
   font-weight: 600;
+  text-decoration: none;
 }
 
 .footerSlate_simple {
@@ -421,6 +446,15 @@ nav.LDTopMenu > div > ul.navbar-nav > li > a.nav-link:hover {
   font-size: 18px;
   color: #808285;
   line-height: 25px;
+}
+
+#dropdown-country {
+  height: 50px;
+  border: 1px solid #E6E7E8;
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  display: block;
 }
 
 .callOutBanner {
@@ -736,6 +770,10 @@ a.docNav {
 
   #navbarNavDropdown {
     width: auto;
+  }
+
+  #dropdown-country {
+    width: 100%;
   }
 }
 

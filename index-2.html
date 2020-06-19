@@ -131,7 +131,14 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Estate</a>
+                        <a class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Estate</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Real Estate</a>
@@ -165,6 +172,10 @@
             <div class="col-12 subHead">
 
                 <p class="resi">FREE RESIDENTIAL RENTAL / LEASE AGREEMENT</p>
+
+                <button class="btn btn-primary">Cleick Me</button>
+
+                <p class="someClass">sdfdfdfds</p>
 
 
              
@@ -313,54 +324,20 @@
 
     <footer>
 
-        <div id="footer-desktop" class="container py-5">
+        <div id="footer-mobile" class="container-fluid d-block d-lg-none">
 
             <div class="row">
 
-                <div class="col-12 col-lg-3">
+                <div class="col-12 mb-2 py-3 text-center border border-left-0 border-right-0">
 
-                    <div>
-                        <img src="images/ld-footer-logo.svg" alt="footer logo" class="footer-logo mb-3">
-                    </div>
-
-                    <div class="mb-5">
-                        1-855-231-8424<br>
-                        <span class="footerv2_phone_hours">Mon-Fri 8am - 7pm ET</span>
-                    </div>
-                    
-                    <div>
-                        <img src="images/facebook-footer.svg" alt="social media" class="footer-social-icons d-inline-block mr-2">
-                        <img src="images/twitter-footer.svg" alt="social media" class="footer-social-icons d-inline-block mr-2">
-                        <img src="images/linkedin-footer.svg" alt="social media" class="footer-social-icons d-inline-block mr-2">
-                    </div>
+                    <a href="#">HELP</a>
                     
                 </div>
 
-                <div class="col-12 col-lg-3">
-
-                    <nav class="nav flex-column footerNav">
-                        <a href="#" class="nav-link">Home</a>
-                        <a href="#" class="nav-link">About</a>
-                        <a href="#" class="nav-link">Contact</a>
-                        <a href="#" class="nav-link">Help Center</a>
-                    </nav>
-                    
-                </div>
-
-                <div class="col-12 col-lg-3">
-                    <nav class="nav flex-column footerNav">
-                        <a href="#" class="nav-link">Legal Documents</a>
-                        <a href="#" class="nav-link">Law Library</a>
-                        <a href="#" class="nav-link">Blog</a>
-                        <a href="#" class="nav-link">Affiliate Program</a>
-                        <a href="#" class="nav-link">White Label Program</a>
-                    </nav>
-                </div>
-
-                <div class="col-12 col-lg-3">
+                <div class="col-12">
 
                     <form>
-                        <div class="form-group">
+                        <div class="form-group my-3">
                             <select class="custom-select" id="dropdown-country">
                                 <option><img src="images/united-states.png" class="flag-image"> United States</option>
                                 <option><img src="images/canada.png" class="flag-image"> Canada</option>
@@ -369,6 +346,28 @@
                             </select>
                         </div>                    
                     </form>
+                    
+                </div>
+
+                <div class="col-4 my-2 py-3 text-center border border-left-0 footerNav">
+
+                    <a href="#">About Us</a>
+                    
+                </div>
+
+                <div class="col-4 my-2 py-3 text-center border border-left-0 footerNav">
+
+                    <a href="#">Privacy Policy</a>
+                    
+                </div>
+
+                <div class="col-4 my-2 py-3 text-center border border-left-0 border-right-0 footerNav">
+
+                    <a href="#">Disclaimer</a>
+                    
+                </div>
+
+                <div class="col-12 my-2">
 
                     <div class="footerv2_logos">
                         <div class="p-2 footerv2_logo_symantec">
@@ -388,27 +387,111 @@
                         </div>
                     </div>
                 </div>
-                
-            </div><!-- End Row -->
+                <div class="col-12 footerv2_disclaimer text-center bg-backgroundgrey">
 
-        </div>
+                    <p class="pt-5 px-5">&#169;2002-2020 LawDepot&#174; (Sequiter Inc.). All Rights Reserved. LawDepot&#174; is not a law firm and cannot provide legal advice.</p>
 
-        <div class="bg-backgroundgrey">
-            <div class="container">
+                    <p class="pb-5 px-5 mb-0">Use of this site is subject to our <a href="#">Terms of Use</a>.</p>                    
+                </div>
+            </div>
+        </div> <!-- End Mobile Footer -->
+
+        <div id="footer-desktop" class="d-none d-lg-block">
+
+            <div class="container py-5">
+
                 <div class="row">
-                    <div class="col-12 footerv2_disclaimer">
 
-                        <p class="py-5 mb-0">Your use of this site is subject to our  <a href="https://www.lawdepot.com/terms.php">Terms of Use</a>, <a href="https://www.lawdepot.com/disclaimer.php">Disclaimer</a>, <a href="https://www.lawdepot.com/privacy.php">Privacy Policy</a>.
-                    LawDepot® is not a law firm and cannot provide legal advice. We provide information and software and you are responsible for appropriately using this material. 
-                    ©2002-2020 LawDepot® (Sequiter Inc.). All Rights Reserved.</p>                    
+                    <div class="col-12 col-lg-3">
+
+                        <div>
+                            <img src="images/ld-footer-logo.svg" alt="footer logo" class="footer-logo mb-3">
+                        </div>
+
+                        <div class="mb-5">
+                            1-855-231-8424<br>
+                            <span class="footerv2_phone_hours">Mon-Fri 8am - 7pm ET</span>
+                        </div>
+                        
+                        <div>
+                            <img src="images/facebook-footer.svg" alt="social media" class="footer-social-icons d-inline-block mr-2">
+                            <img src="images/twitter-footer.svg" alt="social media" class="footer-social-icons d-inline-block mr-2">
+                            <img src="images/linkedin-footer.svg" alt="social media" class="footer-social-icons d-inline-block mr-2">
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-12 col-lg-3">
+
+                        <nav class="nav flex-column footerNav">
+                            <a href="#" class="nav-link">Home</a>
+                            <a href="#" class="nav-link">About</a>
+                            <a href="#" class="nav-link">Contact</a>
+                            <a href="#" class="nav-link">Help Center</a>
+                        </nav>
+                        
+                    </div>
+
+                    <div class="col-12 col-lg-3">
+                        <nav class="nav flex-column footerNav">
+                            <a href="#" class="nav-link">Legal Documents</a>
+                            <a href="#" class="nav-link">Law Library</a>
+                            <a href="#" class="nav-link">Blog</a>
+                            <a href="#" class="nav-link">Affiliate Program</a>
+                            <a href="#" class="nav-link">White Label Program</a>
+                        </nav>
+                    </div>
+
+                    <div class="col-12 col-lg-3">
+
+                        <form>
+                            <div class="form-group">
+                                <select class="custom-select" id="dropdown-country">
+                                    <option><img src="images/united-states.png" class="flag-image"> United States</option>
+                                    <option><img src="images/canada.png" class="flag-image"> Canada</option>
+                                    <option><img src="images/united-kingdom.png" class="flag-image"> United Kingdom</option>
+                                    <option><img src="images/australia.png" class="flag-image"> Australia</option>
+                                </select>
+                            </div>                    
+                        </form>
+
+                        <div class="footerv2_logos">
+                            <div class="p-2 footerv2_logo_symantec">
+                                
+                                <img class="img-fluid" name="seal" src="https://seal.websecurity.norton.com/getseal?at=0&amp;sealid=0&amp;dn=www.lawdepot.ca&amp;lang=en&amp;tpt=transparent" usemap="#sealmap_large" alt="" border="0"> 
+
+                            </div>
+                            <div class="p-2 footerv2_logo_trustwave">
+                                
+                                <img class="img-fluid"  id="trustwaveSealImage" src="https://sealserver.trustwave.com/seal_image.php?customerId=x4ix8frNfNOhLcVHKItmgytngYYVM8&amp;size=105x54&amp;style=" style="cursor:pointer;" alt="This site is protected by Trustwave's Trusted Commerce program" title="This site is protected by Trustwave's Trusted Commerce program" border="0">
+                            </div>
+
+                            <div class="p-2 footerv2_logo_bbb">
+
+                                <img class="logo_bb img-fluid" src="https://seal-edmonton.bbb.org/seals/blue-seal-293-61-lawdepottm-134065.png" alt="Click for the Business Review of LawDepot TM, a Legal Forms in Edmonton AB">
+
+                            </div>
+                        </div>
                     </div>
                     
-                </div>
+                </div><!-- End Row -->
 
-                
             </div>
-                            
-        </div>
+
+            <div class="bg-backgroundgrey">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 footerv2_disclaimer">
+
+                            <p class="py-5 mb-0">Your use of this site is subject to our  <a href="https://www.lawdepot.com/terms.php">Terms of Use</a>, <a href="https://www.lawdepot.com/disclaimer.php">Disclaimer</a>, <a href="https://www.lawdepot.com/privacy.php">Privacy Policy</a>. LawDepot&#174; is not a law firm and cannot provide legal advice. We provide information and software and you are responsible for appropriately using this material. &#169;2002-2020 LawDepot&#174; (Sequiter Inc.). All Rights Reserved.</p>                    
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+
+        </div>  <!-- End Desktop Footer -->
+
+
     
     </footer>
 

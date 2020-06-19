@@ -1,5 +1,5 @@
-@import "bootstrap-mods.css";
 @import "variables-mixins.scss";
+@import "bootstrap-mods.scss";
 @import "ld.css";
 @import "colors.scss";
 
@@ -199,6 +199,19 @@ nav.LDTopMenu > div > ul.navbar-nav > li > a.nav-link:hover {
 }
 
 
+
+
+
+/*  /////////  FOOTER  /////////  */
+
+#footer-desktop {
+
+}
+
+#footer-mobile {
+
+}
+
 .footerNav a {
 	color: $footerNavLinks;
 }
@@ -206,8 +219,8 @@ nav.LDTopMenu > div > ul.navbar-nav > li > a.nav-link:hover {
 .footerNav a:hover {
 	color: $footerNavLinks;
 	font-weight: 600;
+    text-decoration: none;
 }
-
 
 
 .footerSlate_simple {
@@ -260,6 +273,17 @@ nav.LDTopMenu > div > ul.navbar-nav > li > a.nav-link:hover {
   font-size: 18px;
   color: #808285;
   line-height: 25px;
+}
+
+#dropdown-country {
+
+    height: 50px;
+    border: 1px solid $backgroundgrey;
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+
 }
 
 
@@ -585,6 +609,12 @@ a.docNav {
     #navbarNavDropdown {
 
         width: auto;
+
+    }
+
+    #dropdown-country {
+
+        width: 100%;
 
     }
 }

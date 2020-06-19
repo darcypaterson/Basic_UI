@@ -1,8 +1,15 @@
 /* Change dropdowns from click to hover */
+
+.dropdown-menu {
+	    
+    border: 3px solid $bordergrey;
+    
+}
 .dropdown:hover>.dropdown-menu {
 
     display: block;
     top: calc(100% - 2px);
 
 }
+
 
